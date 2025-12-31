@@ -15,6 +15,12 @@ class EntryOut(BaseModel):
     mood: str | None
     created_at: datetime
 
+class EntryUpdate(BaseModel):
+    title: str | None = None
+    content: str | None = None
+    summary: str | None = None
+    mood: str | None = None
+
 
     class Config:
         from_attributes = True
